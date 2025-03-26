@@ -5,25 +5,26 @@
 }
 
 body {
-    min-height: 100vh;
-    background: #efece7;
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
     color: black;
     font-weight: 500;
     line-height: 50px;}
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #4a6e43;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    padding-top: 8px;
 }
 
 /* L'en-tête */
@@ -40,10 +41,10 @@ header {
     justify-content:space-between ;
     align-items: center;
     z-index: 99;
-    margin-block-end: 1em;
+    margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px ;
+    padding-inline-start: 1rem ;
     
 
 }
@@ -61,7 +62,7 @@ header .navigation ul li {
 
 header .navigation ul li a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -99,7 +100,7 @@ header .navigation ul li .btnLogin-popup {
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: .8rem;
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
@@ -116,14 +117,15 @@ header ul li a .active,  header ul li a:hover {
 }
 
 .check-btn {
-    font-size: 25px;
-    color: white;
-    float: left;
-    line-height: 50px;
-    margin-right: 10px;
+    font-size: 1.1rem;
+    color: black;
+    float: right;
     cursor: pointer;
     display: none;
-    clear: left;
+    clear: right;
+    margin-right: -60px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #check {
@@ -169,8 +171,8 @@ header ul li a .active,  header ul li a:hover {
         width: 50vw;
         height: 70vh;
         background: #507949 ;
-        top: 100px;
-        left: -52%;
+        top: 50px;
+        right: -58%;
         text-align:left;
         transition: .5s;
         border: 2px solid #c9c8c8;
@@ -186,12 +188,13 @@ header ul li a .active,  header ul li a:hover {
     }
 
     header .navigation ul li a {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     #check:checked ~ ul {
-        left: 0;
+        right: 0;
     } 
+
 }
 
 #accueil {
@@ -203,7 +206,7 @@ header ul li a .active,  header ul li a:hover {
     color: #4a6e43;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 25px;
+    font-size: 1.3rem;
     line-height: 50px;
     padding: 0 10px;
     font-family: 'Poppins', sans-serif;
@@ -219,7 +222,8 @@ header ul li a .active,  header ul li a:hover {
     /* background: #b6c9b3; */
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    margin-top: 50px;
     
 }
 
@@ -300,8 +304,8 @@ margin-left: 90px;
 /* la partie de 'top categorie'  */
 
 .categories {
-    width: 90vw;
-    margin: 130px auto;
+    width: 100%;
+    padding: 20px;
 }
 
 .grilles {
@@ -309,7 +313,7 @@ margin-left: 90px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 250px;
     justify-content: space-around;
-    gap: 25px;
+    gap: 20px;
     margin-top: 40px;
 }
 
@@ -357,8 +361,9 @@ margin-left: 90px;
 /* la partie top produit  */
 
 .produit {
-    width: 90vw;
-    margin: 50px auto;
+    width: 100%;
+    padding: 20px;
+
 }
 .gride{
    display: flex;
@@ -373,7 +378,7 @@ margin-left: 90px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     height: 300px;
-    width: 210px;
+    width: 14.1rem;
     line-height: 40px;
 }
 
@@ -418,8 +423,8 @@ margin-left: 90px;
 /* la partie top vendeur */
 
 .top {
-    width: 90vw;
-    margin: 150px auto;
+    width: 100%;
+    
 }
 
 .top h2 {
@@ -474,6 +479,10 @@ margin-left: 90px;
     text-align: center;
 }
 
+.pour_telephone {
+    display: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -481,12 +490,8 @@ footer {
     margin: 0;
     padding: 0;
     background-color: #4a6e43;
+    width: 100vw;
 }
-    
-    .logo_nom img {
-        max-width: 300px;
-    
-    }
     
     .premier{
         display: flex;
@@ -559,7 +564,12 @@ footer {
 
     
     /* Responsive : afficher le menu burger sur mobile */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 858px) {
+        
+
+        .annonce {
+            display: none;
+        }
         .burger-menu {
             display: block; /* Afficher le menu burger */
             font-size: 30px;
@@ -594,53 +604,89 @@ footer {
     
     /* responsivité */
     @media screen and (max-width:640px) {
-     .sous_tete{
-        display: none;
-     }
-     
 
-    .pour_telephone {
-        display: flex;
-    visibility: visible;
-justify-content: center;
-align-items: center;
-background: #92b08d;
-border-radius: 12px;
-margin: auto 1%;}
-    .pour_telephone img{
-    max-width: 300px;
-    width: 100px;
-    }
-nav{
-    background: #efece7;
-    align-items: center;
-    margin: auto 1%;
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            color: black;
+            font-weight: 500;
+            line-height: 50px;}
+        
+        h2 {
+            font-size: 1.3rem;
+            color: #4a6e43;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+
+.pour_telephone {
+    display: flex;
+    background-color: #efe5d3c0;
+    width: 100%;
+    margin-top: 100px;
+    width: 90vw;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
 }
 
-nav ul {
-    font-size: 12px;
-    padding: 0;
-   justify-content: space-around;
+.pour_telephone div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
 }
-#accueil, #connexion {
-background: none;
+
+#bienvenu {
+font-size: .7rem;
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+font-weight: 400;
 }
-#rejoins {
-    background: #d8888c;
-    padding: 5px;
-    border-radius: 12px;
+
+.pour_telephone img {
+    width: 150px;
+   border-bottom-left-radius: 70%;
+   border-top-left-radius: 100%;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   height: 150px;
+   object-fit: cover;
 }
-#incitation_phone{
-    color: #ffffff;
+
+.pour_telephone p {
+    font-size: 1rem;
+    font-weight: 500;
 }
+
+.pour_telephone a {
+   text-decoration: none;
+   font-size: .8rem;
+   background-color: #507949;
+   padding: 5px 10px;
+   border-radius: 20px;
+   color: white;
+   margin-top: 15px;
+}
+
+.gride .item {
+    width: 16.6rem;
+    padding: 20px;
+}
+
+
 /* .categories .grilles{
    
 } */
 .gride{
-    margin: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
-   gap: 20px;
+margin: 20px 20px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(1fr)) ;
+gap: 20px;
 
 }
 .premier {
@@ -675,4 +721,99 @@ gap: 20px;
 
 }
 
+}
+
+@media screen and (max-width:858px) {
+
+    .premier {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+         
+    }
+    .deuxieme{
+        display: flex;
+        flex-direction: column;
+    gap: 10px;
+    
+    }
+    
+    footer p {
+        color: rgb(244, 243, 243);
+        line-height: 30px;
+        font-size: 12px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column-reverse;
+    gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;}
+
+        nav{
+            background:  #b6c9b3;
+            align-items: center;
+            margin: auto 1%;
+        }
+
+
+        
+        nav ul {
+            font-size: 1rem;
+            padding: 0;
+           justify-content: space-around;
+           align-items: center;
+        }
+        #accueil, #connexion {
+        background: none;
+        }
+    
+    }
+
+    @media screen and (max-width: 640px) {
+        .grilles, .grida {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: 100px;
+            gap: 10px;
+        }
+
+        .grilles img{
+            height: 100px;
+        }
+        .grid:hover {
+            transform: scale(0.95);
+        }
+        
+        .lien {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        
+        .cat {
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            /* background-color: rgba(0, 0, 0, 0.288); */
+            text-transform: capitalize;
+            border-radius: 16px;
+            color: white;
+
+        }
+
+        .presentation {
+            display: none;
+        }
 }

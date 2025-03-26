@@ -650,7 +650,7 @@ font-weight: 400;
 }
 
 .pour_telephone img {
-    width: 150px;
+    width: 160px;
    border-bottom-left-radius: 70%;
    border-top-left-radius: 100%;
    border-top-right-radius: 10px;
@@ -777,7 +777,7 @@ gap: 20px;
     @media screen and (max-width: 640px) {
         .grilles, .grida {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
             grid-template-rows: 100px;
             gap: 8px;
         }

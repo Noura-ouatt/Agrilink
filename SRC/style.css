@@ -629,7 +629,7 @@ footer {
     margin-top: 100px;
     margin: 100px auto 0 auto;
     border-radius: 10px;
-    height: 180px;
+    height: 200px;
 }
 
 .pour_telephone div {
@@ -655,7 +655,7 @@ font-weight: 400;
    border-top-left-radius: 100%;
    border-top-right-radius: 10px;
    border-bottom-right-radius: 10px;
-   height: 190px;
+   height: 215px;
    object-fit: cover;
 }
 

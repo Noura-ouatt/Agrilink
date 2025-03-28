@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and registration</title>
-    <link rel="stylesheet" href="/SRC/se connecter et s'enregistrer/login.css">
+    <link rel="stylesheet" href="/SRC/se_connecter_et_enregistrer/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,22 +18,16 @@
 <div class="se_connecter">
 <img src="https://i.pinimg.com/736x/be/93/1b/be931b33e2eb94298174c9075e707f1b.jpg" alt="image de fruits et légumes">
 <div class="cover_box">
-
-<!-- registration -->
-
-<div class="form-box register">
-    <h2>S'enregistrer</h2>
+<div class="form-box login">
+    <div class="marque">
+        <label for="" class="logo">AGRILINK</label>
+        <h2>Se connecter</h2>
+    </div>
+   
     <form action="#">
-
-        <div class="input-box">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <input type="text" id="text" required title="text" placeholder="">
-            <label for="email">Nom utilisateur</label>
-        </div>
-
         <div class="input-box">
             <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <input type="email" id="email" required title="email" placeholder="">
+            <input type="email" id="email" required>
             <label for="email">Email</label>
         </div>
 
@@ -44,14 +38,16 @@
         </div>
 
         <div class="remenber-forgot">
-            <label for=""><input type="checkbox">Accepter toutes les conditions</label>
+            <label for=""><input type="checkbox">Se souvenir de moi</label>
+            <a href="#">Mot de passe oublié</a>
         </div>
 
-        <button type="submit" class="btn">S'enregistrer</button>
+        <button type="submit" class="btn">Se connecter</button>
         <div class="login-register">
-            <p>Vous avez déjà un compte ? <a href="/SRC/se connecter et s'enregistrer/connexion.html" class="login-link">Se connecter</a></p>
+            <p>Vous n'avez pas de compte ? <a href="/SRC/se connecter et s'enregistrer/enregistrement.html" class="register-link">Créer un compte</a></p>
         </div>
     </form>
+
 </div>
 
 </div>
